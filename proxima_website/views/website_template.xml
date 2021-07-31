@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+     <!-- Home of proxima page -->
+    <template id="custome_home_proxima" inherit_id="website.default_page" customize_show="True"> 
+     <t t-call="website.layout">
+        <xpath expr="//div[@class='container text-center o_homepage_editor_welcome_message']" position="replace">
+           <div t-name="website.homepage_editor_welcome_message" class="container text-center o_homepage_editor_welcome_message">
+               <h2 class="mt0">Ta maman salaud pourquoi tu deranges!</h2>
+               <p class="lead d-none d-md-block">Let's start designing.</p>
+          </div>
+        </xpath>
+     </t>
+    </template>
+
+
+    <!-- Header of proxima page -->
+    <template id="custom_navbar_proxima" inherit_id="website.layout" customize_show="True" name="Proxima Main Header">
+        <xpath expr="//header" position="replace">
+             <header id="menu_odoo">
+               <div class="palatin-main-menu">
+                    <div class="classy-nav-container breakpoint-off">
+                        <div class="container">
+                        <nav class="navbar navbar-expand-lg navbar-light ftco_navbar ftco-navbar-light" id="ftco-navbar">
+                            <a class="navbar-brand" href="#">Navbar</a>
+                            <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#">Disabled</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">A Propos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Nos Services</a>
+                            </li>
+                            </ul>
+                            <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search"/>
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                            </form>
+                        </nav>
+                        </div>
+                     </div>
+                 </div>
+                </header>
+        </xpath>
+    </template>
+
+   
+    
+     <!-- Footer of proxima page -->
+    <template id="footer_custom" inherit_id="website.footer_custom" name="Footer">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
+                <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                            <h2>Heading</h2>
+                            <p>
+                                Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. 
+                            </p>
+                            <p>
+                                <a class="btn btn-secondary" href='#' role="button">View Detail >></a>
+                            </p>
+                            </div>
+                            <div class="col-md-4" id="connect">
+                                <h2>Heading</h2>
+                            <p>
+                                Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. 
+                            </p>
+                            <p>
+                                <a class="btn btn-secondary" href='#' role="button">View Detail >></a>
+                            </p>
+                            </div>
+                            <div class="col-md-4">
+                                <h2>Heading</h2>
+                            <p>
+                                Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. 
+                            </p>
+                            <p>
+                                <a class="btn btn-secondary" href='#' role="button">View Detail >></a>
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </xpath>
+    </template>
+
+
+
+</odoo>
